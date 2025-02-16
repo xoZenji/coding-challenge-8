@@ -35,8 +35,8 @@ function calculateRentalCost(days, carType, insurance = false ) {
     let rentalcost = rate * days;
     if(insurance) rentalcost += days * 20;
     return `Total Rental Cost: $${rentalcost}`;
-};
+}; // Created a function that calculates the total rental cost based on package.
 
 console.log(calculateRentalCost(3, "Economy", true)); // Expected output: "Total Rental Cost: $180"
 console.log(calculateRentalCost(5, "Luxury", false)); // Expected output: "Total Rental Cost: $500"
-// Prints the total rental cost for the economy and luxury packages.
+// Prints the total rental cost for the economy and luxury packages to the console.
