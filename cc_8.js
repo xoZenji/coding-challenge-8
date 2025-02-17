@@ -74,3 +74,15 @@ let cart = createCartTracker();
 console.log(cart(20)); // Expected output: "Total Cart Value: $20"
 console.log(cart(35)); // Expected output: "Total Cart Value: $55"
 // Prints the total value of the cart to the console.
+
+// Task 8: Savings Growth Projection
+function calculateSavings(years, amount) {
+    if (years >= 10) 
+        return `Projected Savings: $${amount.toFixed(2)}`;
+
+    return calculateSavings(years + 1, amount * 1.05);
+}; // Created a function that shows the projected growth of the savings at a 5% increase each year until year 10.
+
+console.log(calculateSavings(8, 1000)); // Expected output: "Projected Savings: $1102.50"
+console.log(calculateSavings(5, 5000)); // Expected output: "Projected Savings: $5525.63"
+// Prints the projected savings to the console.
